@@ -108,6 +108,8 @@ class SyncSingleRequestBuilder:
             params=self.params,
             headers=self.headers,
         )
+        print(r)
+        print(r.json())
         try:
             if (
                 200 <= r.status_code <= 299
